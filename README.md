@@ -1,6 +1,8 @@
 # P7_Good_Morning
 Automate Python to send a good morning email every day, and the email contains a quote fetched from API.
 
+![Figure1](./Figure1.png)
+
 ## How to Use This Program?
 ### Execution
 To use this program to send the quote to a desired email address, you would need
