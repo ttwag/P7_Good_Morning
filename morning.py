@@ -22,8 +22,7 @@ The fetch_quote() function fetches a quote from https://api-ninjas.com/api/quote
 
 def fetch_quote():
     category = ["attitude", "Computers", "courage", "dreams", "failure", "forgiveness", "freedom", "friendship",
-                "happiness"
-                "hope", "imagination", "inspirational", "leadership", "morning", "success"]
+                "happiness", "hope", "imagination", "inspirational", "leadership", "morning", "success"]
     api_url = f"https://api.api-ninjas.com/v1/quotes?category={select(category)}"
     quote_response = requests.get(api_url, headers={"X-Api-Key": os.getenv("QUOTE_API")})
     if quote_response.status_code == requests.codes.ok:
