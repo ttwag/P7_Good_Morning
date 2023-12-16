@@ -44,7 +44,7 @@ sender_password = os.getenv("EMAIL_PASSWORD")
 receiver_email = os.getenv("RECEIVER")
 
 # Email Content
-subject = "Good Morning Tao!!!"
+subject = "Good Morning Tao!!!\nIt's Another Exciting Day.\nThe best time to plant a tree was 20 years ago. The second best time is today!"
 quote = fetch_quote()
 text = "There's an error loading the quote :("
 try:
