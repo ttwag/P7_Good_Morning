@@ -44,7 +44,7 @@ sender_password = os.getenv("EMAIL_PASSWORD")
 receiver_email = os.getenv("RECEIVER")
 
 # Email Content
-subject = "Good Morning Tao!!!\nIt's Another Exciting Day.\nThe best time to plant a tree was 20 years ago. The second best time is today!"
+subject = "Good Morning Tao!!!"
 quote = fetch_quote()
 text = "There's an error loading the quote :("
 try:
@@ -52,7 +52,7 @@ try:
 except Exception as e:
     print(f"Error While Formatting the Quote: {e}")
 
-content = f"How Are You Doing Today?\n\n{text}"
+content = f"How Are You Doing Today?\n\nIt's Another Exciting Day!\nThe best time to plant a tree was 20 years ago. The second best time is today!\n\n{text}"
 
 # Create the email message
 message = EmailMessage()

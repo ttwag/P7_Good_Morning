@@ -3,6 +3,9 @@ Automate Python to send a good morning email every day, and the email contains a
 
 ![Figure1](./Figure1.png)
 
+## Installation
+Simply clone the repository or download the zip file.
+
 ## How to Use This Program?
 ### Execution
 To use this program to send the quote to a desired email address, you would need
@@ -38,8 +41,13 @@ For example, if I want to schedule morning.py to run every morning at 6:00 am on
 
 After the editing is done, hit ```etc``` then enter ```:wq``` to save and exit the vim editor.  
 
-## File Structure
-morning.py fetches the quote from API then email the desired account. It depends on the **dotenv** library.
+## Dependencies and File Structure
+Running this program requires a python interpreter.
+
+morning.py also depends on the **dotenv** library, so you may need to install it.
+
+## Development Environment
+This python code was developed using PycharmCE 2023.1.3, and the crontab was written through vim in macOS terminal.
 
 ## Note
 If you use a gmail account to send the email, enable that gmail address to use app password to log in and input 
